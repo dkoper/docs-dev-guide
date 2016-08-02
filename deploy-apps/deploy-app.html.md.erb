@@ -89,7 +89,7 @@ CF ​allows​ app names, but not app URLs, to include underscores. CF converts
    * `-n` to assign a different HOST name for the app
    * `--random-route` to create a URL that includes the app name and random words
 
- <p class='note'><strong>Note</strong>: Use <code>cf help push</code> to view other options for this command.</p>
+ <p class='note'><strong>Note</strong>: Use <code>cf push -h</code> to view other options for the [cf push](http://cli.cloudfoundry.org/en-US/cf/push.html) command.</p>
 
 <%=vars.ssl%>
 
@@ -158,7 +158,7 @@ For example, any application can access the LANG environment variable to determi
 
 You can set environment variables for an application in one of three ways:
 
-* Using the cf CLI. See the following example:
+* Using the [cf set-env](http://cli.cloudfoundry.org/en-US/cf/set-env.html). See the following example:
 
     <pre class='terminal'>
     $ cf set-env APP-NAME ENV-VAR-NAME ENV-VAR-VALUE
